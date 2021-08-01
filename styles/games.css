@@ -1,0 +1,259 @@
+*,
+*::before,
+*::after 
+{
+    box-sizing: border-box;
+}
+
+body 
+{
+    overflow-x: hidden;
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+a 
+{
+    text-decoration: none;
+}
+
+li 
+{
+    list-style: none;
+}
+
+header 
+{
+    background: linear-gradient(to bottom, #33ccff 0%, rgb(39,180,255) 100%);
+
+}
+
+header nav i 
+{
+    position: absolute;
+    left: 20px;
+    color: #fff;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.container 
+{
+    width: 100%;
+    max-width: 118rem;
+    margin: 0 2rem;
+    height: calc(100vh - 70px);
+}
+
+.container .title 
+{
+    text-align: center;
+    font-size: 33px;
+    font-weight: 600;
+    margin: 1rem 0;
+}
+
+.about_choppie 
+{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    width: 100%;
+    margin: 0 auto;
+}
+
+
+.about_choppie .text_content,
+.about_choppie .image
+{
+    width: 50%;
+}
+
+.about_choppie .text_content
+{
+    font-size: 24px;
+    color: #333;
+}
+
+.about_choppie .image
+{
+    display: flex;
+    justify-content: center;
+  
+}
+
+.about_choppie .image img
+{
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    float: right;
+    transform: translateY(-3rem);
+}
+
+.games .element .text_element
+{
+    font-size: 20px;
+    color: #333;
+}
+
+.games .board 
+{
+    position: relative; 
+    width: 500px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem auto;
+}
+
+
+
+.games .review
+{
+    font-size: 35px;
+    margin: 0 auto;
+    width: 100%;
+    text-align: center;
+}   
+
+.games .board .cell 
+{
+    width: 100px;
+    height: 100px;
+    border: 1px solid #000;
+    outline: 2px solid #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.games .board .cell:not(.first):not(.last)
+{
+    border-top: 2px solid #000;
+    border-bottom: 2px solid #000;
+}
+
+.games .board .cell.first
+{
+    border-left: 2px solid #000;
+}
+
+.games .board .cell.last
+{
+    border-right: 2px solid #000;
+}
+
+.games .board .cell.first,
+.games .board .cell.last 
+{
+    border-top: 2px solid #000;
+    border-bottom: 2px solid #000;
+}
+
+.games .board img
+{
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    left: 0px;
+    transform: scale(1.3);
+    transition: all 350ms ease-in-out;
+}
+
+.games .key_container 
+{
+    margin: 0 auto;
+    border: 2px solid #0066ff;
+    border-radius: 8px;
+    width: 100px;
+    height: 75px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: all 350ms ease-in-out;
+}
+
+.games .key_container .key i
+{
+    font-size: 30px;
+    color: #0066ff;
+}
+
+.games .board .cell i.fas.fa-apple-alt 
+{
+    font-size: 55px;
+    color: rgb(130,201,30);
+}
+
+.games .board .cell i.fas.fa-candy-cane
+{
+    font-size: 50px;
+    color: rgb(190, 12, 131);
+} 
+
+.games .board .review 
+{
+    font-size: 25px;
+    margin-left: 50px;
+}
+
+.games .key_container:hover 
+{
+    background: #0066ff;
+}
+
+.games .key_container:hover .key i,
+.games .key_container:hover .text
+{
+    color: #fff;
+}
+
+.next-lesson 
+{
+    width: 100%;
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 1rem 0;
+}
+
+.next-lesson button 
+{
+    width: 200px;
+    height: 50px;
+    border: 2px solid #0066ff;
+    background: #fff;
+    border-radius: 8px;
+    color: #000;
+    font-family: "Poppins", sans-serif;
+    font-size: 18px;
+    cursor: pointer;
+    transition: all 350ms ease-in-out;
+    margin: 2rem 0;
+}
+
+.next-lesson button i 
+{
+    color: #0066ff;
+}
+
+.next-lesson button:hover 
+{
+    background: #0066ff;
+    color: #fff;
+}
+
+.next-lesson button:hover a 
+{
+    color: #fff;
+}
+
+.next-lesson button:hover i
+{
+    color: #fff;
+} 

@@ -1,0 +1,195 @@
+
+*,
+*::before,
+*::after 
+{
+    box-sizing: border-box;
+}
+
+body 
+{
+    overflow-x: hidden;
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+
+a 
+{
+    text-decoration: none;
+}
+
+li 
+{
+    list-style: none;
+}
+
+.main 
+{
+    width: 100%;
+    height: 350px;
+    background: linear-gradient(to bottom, #33ccff 0%, #0066ff 100%);
+    padding: 4px 0;
+    
+}
+
+.main .title 
+{
+   
+    margin: 0 auto;
+    color: #fff;
+    font-size: 40px;
+    font-weight: 600;
+    margin: 1.5rem 2rem;
+    
+    animation: tryButton 1s 1;
+    animation-fill-mode: forwards;
+}
+
+.main .description 
+{
+    font-size: 22px;
+    font-weight: normal;
+    color: rgb(236, 227, 227);
+    
+    transform: translateX(-100vw);
+    margin: 0 2rem;
+    animation: tryButton 1s 1;
+    animation-fill-mode: forwards;
+    animation-delay: .75s;
+}
+
+.main .try_btn 
+{
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    border: 2px solid #fff;
+    background: transparent;
+    width: 100%;
+    max-width: 175px;
+    height: 37.5px;
+    margin: 1.5rem 2rem 0;
+    font-family: "Poppins", sans-serif;
+    color: #fff;
+    cursor: pointer;
+    transform: translateX(-100vw);
+    transition: all 350ms ease-in-out;
+    animation: tryButton 1s 1;
+    animation-fill-mode: forwards;
+    animation-delay: 1.5s;
+    
+}
+
+.main .try_btn a
+{
+    color: #fff;
+}
+
+.main .try_btn:hover 
+{
+    background: #fff;
+    border: none;
+    
+}
+
+.main .try_btn:hover a 
+{
+    color: #000;
+}
+
+.main svg 
+{
+  margin-top: -2rem;
+}
+
+.container 
+{
+    width: 100%;
+    max-width: 128rem;
+    margin: 0 auto;
+    
+}
+
+.container .title 
+{
+    text-align: center;
+    margin: 3rem 0;
+    font-size: 35px;
+    font-weight: 600;
+}
+
+.container .row 
+{
+    display: grid;
+    grid-template-columns: repeat(3, minmax(200px, 1fr));
+    justify-content: center;
+    
+    padding: 0 2rem;
+}
+
+.container .element 
+{
+    width: 100%;
+    padding: 5px 30px;
+}
+
+.container .element .icon
+{
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+}
+
+.container .element .icon i
+{
+    color: #0066ff;
+   
+    font-size: 50px;
+   
+}
+
+.container .element .icon.steps i
+{
+    transform: rotateZ(-90deg);
+}
+
+.container .element .title_element 
+{
+    margin: 1rem 0;
+    font-size: 28px;
+    font-weight: 500;
+    color: #0066ff;
+    text-align: center;
+}
+
+.container .element .text_element
+{
+    font-size: 18px;
+    color:rgb(99, 98, 98);
+    
+}
+
+.container .start 
+{
+    text-align: center;
+    margin: 0 auto;
+    font-size: 22px;
+}
+
+/*Animations */
+
+@keyframes tryButton 
+{
+    from {
+        transform: translateX(-100vw);
+        opacity: 0;
+        display: none;
+        
+    } to {
+        transform: translateY(0%);
+        opacity: 1;
+        display: block;
+    }
+}

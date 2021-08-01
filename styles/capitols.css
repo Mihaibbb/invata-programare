@@ -1,0 +1,61 @@
+main 
+{
+    display: flex;
+
+}
+
+.capitols 
+{
+    height: auto;
+    width: 100%;
+    max-width: 400px;
+    height: 100%;
+    background: #0066ff;
+    padding: 2rem 0;
+    transform: translateX(-100%);
+    position: absolute;
+    z-index: 3;
+    
+    transition: all 350ms ease-in-out;
+}
+
+.capitols .title 
+{
+    text-align: center;
+    font-size: 30px;
+    color: #fff;
+    font-weight: 600;
+    
+}
+
+.capitols ul 
+{
+    
+    
+}
+
+.capitols ul li 
+{
+    margin: 1rem 0;
+    text-align: left;
+    color: #fff;
+    cursor: pointer;
+}
+
+.capitols ul li.active 
+{
+    text-decoration: underline;
+}
+
+.capitols ul li a 
+{
+    color: #fff;
+    cursor: pointer;
+}
+
+.show 
+{
+    transform: translateX(0);
+    
+   
+}

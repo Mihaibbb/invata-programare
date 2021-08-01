@@ -1,0 +1,37 @@
+*,
+*::before,
+*::after 
+{
+    box-sizing: border-box;
+}
+
+body 
+{
+    overflow-x: hidden;
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+a 
+{
+    text-decoration: none;
+}
+
+li 
+{
+    list-style: none;
+}
+
+header 
+{
+    background: linear-gradient(to bottom, #33ccff 0%, rgb(39,180,255) 100%);
+}
+
+.container .title 
+{
+    text-align: center;
+    font-size: 33px;
+    font-weight: 600;
+    margin: 1rem 0;
+}
