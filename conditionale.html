@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conditionale</title>
+    <script src="./scripts/capitols.js" defer></script>
+    <script src="./scripts/conditionale.js" defer></script>
+    <link rel="stylesheet" href="./styles/header.css">
+    <link rel="stylesheet" href="./styles/games.css">
+    <link rel="stylesheet" href="./styles/capitols.css">
+    <link rel="stylesheet" href="./styles/conditionale.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" rel="stylesheet">
+  
+</head>
+<body>
+    <header>
+        <nav>
+                <i class="fas fa-bars"></i>
+                <li class="list-item"><a href="./index.html">Acasa</a></li>
+                <li class="list-item"><a href="./tutorial.html">Tutorial</a></li>
+                <li class="list-item">Capitole</li>
+                <li class="list-item">Despre noi</li>
+                <!-- <li></li>
+                <li></li> -->
+            
+        </nav>
+    </header>
+
+    <main>
+        <div class="capitol_container">
+            <div class="capitol_bar"></div>
+            
+            
+            <div class="capitols">
+                <div class="title">Lectiile</div>
+                <ul>
+                    <li class="capitol-item"><a href="games.html">1. Choppie si jocurile.</a></li>
+                    <li class="capitol-item active"><a href="conditionale.html">2. Structuri decizionale</a></li>
+                    <li class="capitol-item"><a href="repetitive.html">3. Structura repetitiva</a></li>
+                    
+                </ul>
+                
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="title">Structuri Decizionale</div>
+
+            <div class="text">În programare există trei tipuri de structuri de control cu ajutorul cărora putem construi orice algoritm:
+                <li>structura secvențială</li>
+                <li>structura decizionala (decizională)</li>
+                <li>structura repetitivă</li> <br>
+                Structura secvențială este cea pe care am vazut-o in lectia precedenta, pe scurt, are o singura posibilitate.<br>
+                Structura decizională execută un anumit set de instrucțiuni dacă o condiție este îndeplinită, altfel execută alt set de instrucțiuni. Forma generală a unei structuri alternative este: 
+                <b>Daca</b> merg la magazin, cumpar bomboane, <b>daca</b> nu are bomboane, iau fructe.<br><br>
+            </div>
+
+            <div class="text">Mai jos avem un mic joculet, unde noi va trebui sa il ajutam pe Choppie sa isi ia bomboana. dar acum va trebuie sa astepte ca semaforul sa se faca verde.</div>
+        
+            <div class="games">
+                
+                <div class="element">
+                    <div class="text_element">Primul joc este destul de simplu.In partea dreapta ai sagetile pentru controlarea lui Choppie.Iar in partea stanga, il ai pe choppie si cateva casute. El trebuie sa ajunga la mar pentru a termina nivelul.</div>
+                </div>
+
+                <div class="second_game">
+
+                    <div class="review"></div>
+
+                    
+                        <div class="board second">
+                            <img src="./img/choppie.svg" alt="choppie image" srcset="">
+                            <div class="cell first"></div>
+                            <div class="cell"></div>
+                            <div class="cell">
+                                <div class="light"></div>
+                            </div>
+                            <div class="cell"></div>
+                            <div class="cell last"><i class="fas fa-candy-cane"></i></div>
+                            
+                        </div>
+    
+                  
+                    
+    
+                    <div class="key_container first">
+                        <div class="key">
+                            <i class="fas fa-chevron-right"></i>
+                        </div>
+                        <div class="text">Dreapta</div>
+                        
+                    </div> 
+
+                    <div class="fail_element"></div>
+
+                    <div class="values">
+
+                    </div>
+
+
+                </div>
+                
+            </div>
+
+            <div class="next-lesson"><button type="button"><a href="./repetitive.html">Urmatoarea lectie <i class="fas fa-chevron-right"></i></a></button></div>
+            
+        </div>
+    </main>
+</body>
+</html>
